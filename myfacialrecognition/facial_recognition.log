@@ -1,0 +1,89 @@
+2019-09-15 12:05:46,520-INFO-app_manager.py:85 create app manager thread
+2019-09-15 12:05:46,521-INFO-presenter_server.py:79 presenter server starting, type: facial_recognition
+2019-09-15 12:06:54,826-INFO-presenter_socket_server.py:255 create new connection:client-ip:192.168.1.2, client-port:54349, fd:12
+2019-09-15 12:06:54,828-INFO-channel_manager.py:216 register channel: video
+2019-09-15 12:06:54,828-INFO-app_manager.py:115 register app: video
+2019-09-15 12:06:55,054-INFO-presenter_socket_server.py:255 create new connection:client-ip:192.168.1.2, client-port:54354, fd:14
+2019-09-15 12:06:55,055-INFO-facial_recognition_handler.py:120 create videothread-video...
+2019-09-15 12:06:55,055-INFO-channel_manager.py:127 create channel resource, channel_name:video, channel_fd:14, media_type:video
+2019-09-15 12:11:02,515-ERROR-facial_recognition_server.py:646 Register face sunth failed, reason:2 faces recognized
+2019-09-15 12:11:02,516-INFO-web.py:196 Register face failed
+2019-09-15 12:15:09,858-ERROR-facial_recognition_server.py:646 Register face sunth1 failed, reason:2 faces recognized
+2019-09-15 12:15:09,858-INFO-web.py:196 Register face failed
+2019-09-15 12:17:05,191-ERROR-facial_recognition_server.py:646 Register face sunth failed, reason:2 faces recognized
+2019-09-15 12:17:05,191-INFO-web.py:196 Register face failed
+2019-09-15 12:18:25,779-ERROR-facial_recognition_server.py:646 Register face sunth1 failed, reason:2 faces recognized
+2019-09-15 12:18:25,779-INFO-web.py:196 Register face failed
+2019-09-15 12:19:38,318-ERROR-facial_recognition_server.py:646 Register face sunth1 failed, reason:2 faces recognized
+2019-09-15 12:19:38,318-INFO-web.py:196 Register face failed
+2019-09-15 12:19:59,793-ERROR-facial_recognition_server.py:646 Register face sunth1 failed, reason:2 faces recognized
+2019-09-15 12:19:59,793-INFO-web.py:196 Register face failed
+2019-09-15 12:22:03,192-ERROR-facial_recognition_server.py:646 Register face nxy failed, reason:2 faces recognized
+2019-09-15 12:22:03,193-INFO-web.py:196 Register face failed
+2019-09-15 12:22:40,982-ERROR-facial_recognition_server.py:646 Register face nxy failed, reason:2 faces recognized
+2019-09-15 12:22:40,983-INFO-web.py:196 Register face failed
+2019-09-15 12:23:23,780-ERROR-facial_recognition_server.py:646 Register face nxy failed, reason:2 faces recognized
+2019-09-15 12:23:23,781-INFO-web.py:196 Register face failed
+2019-09-15 12:23:49,102-ERROR-facial_recognition_server.py:646 Register face nxy failed, reason:2 faces recognized
+2019-09-15 12:23:49,103-INFO-web.py:196 Register face failed
+2019-09-15 12:26:03,041-INFO-facial_recognition_server.py:653 Register face nxy succeed
+2019-09-15 12:26:03,041-INFO-web.py:193 Register face success
+2019-09-15 12:26:51,170-INFO-web.py:219 Delete face success
+2019-09-15 12:30:47,426-INFO-facial_recognition_server.py:653 Register face sth1 succeed
+2019-09-15 12:30:47,427-INFO-web.py:193 Register face success
+2019-09-15 12:31:02,986-ERROR-facial_recognition_server.py:646 Register face sth2 failed, reason:2 faces recognized
+2019-09-15 12:31:02,987-INFO-web.py:196 Register face failed
+2019-09-15 12:31:23,307-INFO-facial_recognition_server.py:653 Register face sth2 succeed
+2019-09-15 12:31:23,307-INFO-web.py:193 Register face success
+2019-09-15 12:40:51,264-INFO-web.py:219 Delete face success
+2019-09-15 12:48:17,430-INFO-facial_recognition_server.py:653 Register face nxy succeed
+2019-09-15 12:48:17,430-INFO-web.py:193 Register face success
+2019-09-15 12:51:12,616-ERROR-facial_recognition_server.py:646 Register face mm failed, reason:No face recognized
+2019-09-15 12:51:12,616-INFO-web.py:196 Register face failed
+2019-09-15 12:51:30,088-ERROR-facial_recognition_server.py:646 Register face mm failed, reason:No face recognized
+2019-09-15 12:51:30,088-INFO-web.py:196 Register face failed
+2019-09-15 19:08:34,882-INFO-facial_recognition_server.py:653 Register face syx succeed
+2019-09-15 19:08:34,882-INFO-web.py:193 Register face success
+2019-09-15 19:15:41,141-INFO-channel_handler.py:124 videothread-video set _close_thread_switch True
+2019-09-15 19:15:41,141-INFO-channel_manager.py:139 clean channel: video's resource
+2019-09-15 19:15:41,141-INFO-channel_manager.py:227 unregister channel: video
+2019-09-15 19:15:41,142-INFO-app_manager.py:94 unregister app: video
+2019-09-15 19:15:41,142-INFO-facial_recognition_handler.py:131 Stop thread:videothread-video.
+2019-09-16 19:36:15,124-INFO-app_manager.py:85 create app manager thread
+2019-09-16 19:36:15,126-INFO-presenter_server.py:79 presenter server starting, type: facial_recognition
+2019-09-16 19:36:45,613-INFO-presenter_socket_server.py:255 create new connection:client-ip:192.168.1.2, client-port:55164, fd:12
+2019-09-16 19:36:45,615-INFO-channel_manager.py:216 register channel: video2
+2019-09-16 19:36:45,615-INFO-app_manager.py:115 register app: video2
+2019-09-16 19:50:22,684-INFO-app_manager.py:85 create app manager thread
+2019-09-16 19:50:22,694-INFO-presenter_server.py:79 presenter server starting, type: facial_recognition
+2019-09-16 19:50:24,115-INFO-presenter_socket_server.py:255 create new connection:client-ip:192.168.1.2, client-port:55229, fd:10
+2019-09-16 19:50:33,730-INFO-presenter_socket_server.py:255 create new connection:client-ip:192.168.1.2, client-port:55230, fd:13
+2019-09-16 19:50:33,731-INFO-channel_manager.py:216 register channel: video
+2019-09-16 19:50:33,731-INFO-app_manager.py:115 register app: video
+2019-09-16 19:52:22,844-INFO-channel_manager.py:227 unregister channel: video
+2019-09-16 19:52:22,845-INFO-app_manager.py:94 unregister app: video
+2019-09-16 19:53:52,047-INFO-presenter_socket_server.py:255 create new connection:client-ip:192.168.1.2, client-port:52119, fd:12
+2019-09-16 19:53:52,048-INFO-channel_manager.py:216 register channel: video
+2019-09-16 19:53:52,049-INFO-app_manager.py:115 register app: video
+2019-09-16 19:53:52,325-INFO-presenter_socket_server.py:255 create new connection:client-ip:192.168.1.2, client-port:52124, fd:14
+2019-09-16 19:53:52,326-INFO-facial_recognition_handler.py:120 create videothread-video...
+2019-09-16 19:53:52,327-INFO-channel_manager.py:127 create channel resource, channel_name:video, channel_fd:14, media_type:video
+2019-09-16 20:50:17,117-ERROR-presenter_socket_server.py:142 socket 12 receive msg head null
+2019-09-16 20:50:17,118-ERROR-presenter_socket_server.py:204 msg_total_len is None.
+2019-09-16 20:50:17,118-INFO-facial_recognition_server.py:194 clean fd:12, conns:{10: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.166', 7008), raddr=('192.168.1.2', 55229)>, 12: <socket.socket fd=12, family=AddressFamily.AF_INET, type=2049, proto=0, laddr=('192.168.1.166', 7008), raddr=('192.168.1.2', 52119)>, 13: <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=0, laddr=('192.168.1.166', 7008), raddr=('192.168.1.2', 55230)>, 14: <socket.socket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.166', 7008), raddr=('192.168.1.2', 52124)>}
+2019-09-16 20:50:17,118-INFO-channel_handler.py:124 videothread-video set _close_thread_switch True
+2019-09-16 20:50:17,118-INFO-channel_manager.py:139 clean channel: video's resource
+2019-09-16 20:50:17,126-INFO-facial_recognition_handler.py:131 Stop thread:videothread-video.
+2019-09-16 20:50:17,128-INFO-channel_manager.py:227 unregister channel: video
+2019-09-16 20:50:17,130-INFO-app_manager.py:131 unregister app: video
+2019-09-16 20:50:17,132-ERROR-presenter_socket_server.py:142 socket 14 receive msg head null
+2019-09-16 20:50:17,132-ERROR-presenter_socket_server.py:204 msg_total_len is None.
+2019-09-16 20:50:17,132-INFO-facial_recognition_server.py:194 clean fd:14, conns:{10: <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.166', 7008), raddr=('192.168.1.2', 55229)>, 13: <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=0, laddr=('192.168.1.166', 7008), raddr=('192.168.1.2', 55230)>, 14: <socket.socket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.166', 7008), raddr=('192.168.1.2', 52124)>}
+2019-09-16 21:02:51,241-INFO-app_manager.py:85 create app manager thread
+2019-09-16 21:02:51,242-INFO-presenter_server.py:79 presenter server starting, type: facial_recognition
+2019-09-16 21:03:07,546-INFO-presenter_socket_server.py:255 create new connection:client-ip:192.168.1.18, client-port:47233, fd:12
+2019-09-16 21:03:07,548-INFO-channel_manager.py:216 register channel: video
+2019-09-16 21:03:07,548-INFO-app_manager.py:115 register app: video
+2019-09-16 21:03:07,782-INFO-presenter_socket_server.py:255 create new connection:client-ip:192.168.1.18, client-port:47238, fd:13
+2019-09-16 21:03:07,783-INFO-facial_recognition_handler.py:120 create videothread-video...
+2019-09-16 21:03:07,783-INFO-channel_manager.py:127 create channel resource, channel_name:video, channel_fd:13, media_type:video
