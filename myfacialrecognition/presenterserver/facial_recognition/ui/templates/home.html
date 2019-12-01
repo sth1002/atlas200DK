@@ -59,7 +59,7 @@
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     fps: <span id="fps_val"></span>
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    <button type="button" onclick="takePic();" class="btn btn-primary" id="takepic" style="vertical-align:baseline;width:80px;">拍照</button>
+                                    <button type="button" onclick="takePicFlg = 1;" class="btn btn-primary" id="takepic" style="vertical-align:baseline;width:80px;">拍照</button>
                                 </p>
                             </div>
                             <div class="video_inner">
@@ -175,9 +175,9 @@
     var ctx=canvas.getContext("2d")
     $('#fpswapper').hide()
     $('#loading').hide()
-    var current_img
+    var takePicFlg = 0;
 
-    function takePic(){
+    function takePic(current_img){
         $("#face_library").click();
         if (uploadedImageURL) {
             URL.revokeObjectURL(uploadedImageURL);
@@ -240,9 +240,12 @@
                     ctx.font="40px serif"
                     ctx.fillStyle="yellow"
                     ctx.drawImage(img,0,0)
-                    canvas.toBlob(function(blob) {
-                        current_img = blob;
-                    });
+                    if (takePicFlg == 1) {
+                        takePicFlg = 0;
+                        canvas.toBlob(function(blob) {
+                            takePic(blob);
+                        });
+                    }
                     for(var i in data["face_list"]){
                         var msg=data["face_list"][i].name
                         if(data["face_list"][i].confidence>0 && data["face_list"][i].confidence<=1){
