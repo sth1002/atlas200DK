@@ -156,14 +156,14 @@ class WebApp:
             return ret
 
         # define pattern support a-z A-Z and /
-        pattern = re.compile(r"[a-z]|[A-Z]|[0-9]|(\s)")
-        tmp = pattern.findall(user_name)
+        # pattern = re.compile(r"[a-z]|[A-Z]|[0-9]|(\s)")
+        # tmp = pattern.findall(user_name)
 
-        # check reuslt changed or not
-        if len(tmp) != len(user_name):
-            logging.info("%s contain invalidate character, add channel failed", user_name)
-            ret["msg"] = "Channel name only support 0-9, a-z, A-Z /"
-            return ret
+        # # check reuslt changed or not
+        # if len(tmp) != len(user_name):
+        #     logging.info("%s contain invalidate character, add channel failed", user_name)
+        #     ret["msg"] = "Channel name only support 0-9, a-z, A-Z /"
+        #     return ret
 
         # check image base64 code
         if len(image_data) <= len(JPEG_BASE64_HEADER):

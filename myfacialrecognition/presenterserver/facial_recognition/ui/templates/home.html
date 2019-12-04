@@ -41,7 +41,7 @@
                                 <table id="mytable" width="100%" border="1">
                                     <tr>
                                         <th>No.</th>
-                                        <th>App Name1</th>
+                                        <th>App Name</th>
                                     </tr>
                                     {% for item in listret[0] %}
                                         <tr>
@@ -584,18 +584,18 @@
             dialog.tip("Tips", "Length of Username should less than 50" ,function(){});
             return false;
         }
-        for (var i = 0; i < name.length; i++)
-        {
-            var c = name.charAt(i).charCodeAt();
-            //ascii check 0-9 a-z A-Z space
-            var flag =  ((c==32) ||(c >= 48 && c <= 57) || (c >= 97 && c<= 122) || (c>= 65 && c <= 90) || (c == 47));
-            if (false == flag)
-            {
-                log("Username only support 0-9, a-z, A-Z space/")
-                dialog.tip("Tips", "Username only support 0-9, a-z, A-Z space/" ,function(){});
-                return false;
-            }
-        }
+        // for (var i = 0; i < name.length; i++)
+        // {
+        //     var c = name.charAt(i).charCodeAt();
+        //     //ascii check 0-9 a-z A-Z space
+        //     var flag =  ((c==32) ||(c >= 48 && c <= 57) || (c >= 97 && c<= 122) || (c>= 65 && c <= 90) || (c == 47));
+        //     if (false == flag)
+        //     {
+        //         log("Username only support 0-9, a-z, A-Z space/")
+        //         dialog.tip("Tips", "Username only support 0-9, a-z, A-Z space/" ,function(){});
+        //         return false;
+        //     }
+        // }
         return true;
     }
     $('#filename').click(function(){
@@ -603,7 +603,9 @@
     })
     $('#submit').click(function(){
         if(true == checkNameValid() && true ==  checkImageValid()){
-            var submiturl="/register?"+"user_name="+encodeURIComponent($("#username").val().trim())+"&image_data="+encodeURIComponent(uploadImage.trim())+"&time="+(new Date().getTime());
+            var encName = encodeURIComponent($("#username").val().trim())
+            alert(encName)
+            var submiturl="/register?"+"user_name="+encName+"&image_data="+encodeURIComponent(uploadImage.trim())+"&time="+(new Date().getTime());
             $('#submit').attr("disabled",true)
             $.ajax({
                 type: "POST",
