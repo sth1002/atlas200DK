@@ -1,4 +1,37 @@
-﻿function takePic(){
+﻿function checkName(name){
+    for (var i = 0; i < name.length; i++)
+    {
+        var c = name.charAt(i);
+        // , and : are not supported
+        if (c == ',' || c == ':' )
+        {
+            dialog.tip("Tips", "Username does not support , and :" ,function(){});
+            return false;
+        }
+    }
+    return true;
+}
+
+function makeMsg(maxName,face){
+    var name = maxName.split('_')[0]
+    $('#facemsg').text(face.allmsg)
+    var msgs = face.allmsg.split(',')
+    var score = 1.0
+    for(var i in msgs){
+        var msg2 = msgs[i].split(':')
+        var tname = msg2[0]
+        if (!tname.startsWith(name)){
+            continue
+        }
+        var tscore = msg2[1]
+        score = score * (1-tscore)
+    }
+    score = (1 - score).toFixed(2)
+    ret = name +  " : " + score
+    return ret
+}
+
+function takePic(){
     $("#face_library").click();
     if (uploadedImageURL) {
         URL.revokeObjectURL(uploadedImageURL);

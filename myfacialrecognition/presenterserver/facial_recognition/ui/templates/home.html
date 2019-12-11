@@ -68,6 +68,8 @@
                                     <canvas id="canvas"></canvas>
                                 </div>
                             </div>
+                            <div class="video_fps" id="facemsg" >
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -250,7 +252,8 @@
                         var msg=data["face_list"][i].name
                         if(data["face_list"][i].confidence>0 && data["face_list"][i].confidence<=1){
                             //confidence keep two digits
-                            msg = msg +  " : " + data["face_list"][i].confidence.toFixed(2)
+                            //msg = msg +  " : " + data["face_list"][i].confidence.toFixed(2)
+                            msg = makeMsg(msg,data["face_list"][i])
                         }
                         var pos=data["face_list"][i].coordinate
                         //add space between msg and face
@@ -596,7 +599,7 @@
         //         return false;
         //     }
         // }
-        return true;
+        return checkName(name);
     }
     $('#filename').click(function(){
         $('#Browse').click()
@@ -604,7 +607,6 @@
     $('#submit').click(function(){
         if(true == checkNameValid() && true ==  checkImageValid()){
             var encName = encodeURIComponent($("#username").val().trim())
-            alert(encName)
             var submiturl="/register?"+"user_name="+encName+"&image_data="+encodeURIComponent(uploadImage.trim())+"&time="+(new Date().getTime());
             $('#submit').attr("disabled",true)
             $.ajax({

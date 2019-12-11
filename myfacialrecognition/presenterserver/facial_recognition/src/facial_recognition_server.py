@@ -502,10 +502,11 @@ class FacialRecognitionServer(PresenterSocketServer):
                 logging.error("feature_vector length not equal 1024")
                 continue
 
-            (name, score) = self._compute_face_feature(feature_vector)
+            (name, score,allmsg) = self._compute_face_feature(feature_vector)
             face_info["coordinate"] = coordinate
             face_info["name"] = name
             face_info["confidence"] = score
+            face_info["allmsg"] = allmsg
             face_list.append(face_info)
 
         return face_list
@@ -519,6 +520,7 @@ class FacialRecognitionServer(PresenterSocketServer):
         """
         highest_score_face = "Unknown"
         highest_score = 0
+        allmsg = ""
         with self.face_lock:
             for i in self.registered_faces:
                 feature = self.registered_faces[i]["feature"]
@@ -526,10 +528,13 @@ class FacialRecognitionServer(PresenterSocketServer):
                 if score < self.face_match_threshold:
                     continue
 
+                allmsg += str(i) + ":" + str(round(score,2)) + ","
                 if score > highest_score:
                     highest_score = score
                     highest_score_face = i
-        return (highest_score_face, highest_score)
+            if allmsg != "":
+                allmsg = allmsg[:-1]
+        return (highest_score_face, highest_score, allmsg)
 
     def _compute_similar_degree(self, feture_vector1, feture_vector2):
         """
